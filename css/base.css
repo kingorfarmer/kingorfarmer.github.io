@@ -1,0 +1,135 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: #ee4d2d;
+    --border-color: #dbdbdb;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_full-width {
+    width: 100%;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* animation */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    0% {
+        transform: scale(0.7);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.2s;
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-body {
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    z-index: 1;
+    animation: growth ease-in 0.2s;
+}
+
+/* Button */
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 34px;
+}
+
+.btn.btn-back.btn-normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn-signIn {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.modal-form-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+.btn-back {
+    margin-right: 8px;
+}
+
+.modal-form-button {
+    margin-top: 70px;
+}
+
+.btn.btn-withicon {
+    height: 36px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
