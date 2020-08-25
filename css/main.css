@@ -245,9 +245,9 @@
     cursor: pointer;
 }
 
-.modal-form-body {
+/* .modal-form-body {
     
-}
+} */
 
 .regis-form-input {
     width: 100%;
@@ -339,9 +339,9 @@
     width: 200px;
 }
 
-.header-logo-link {
+/* .header-logo-link {
 
-}
+} */
 
 .header-logo-img {
     width: 170px;
@@ -352,6 +352,8 @@
     background-color: #fff;
     flex: 1;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
 }
 
 .header-cart {
@@ -363,4 +365,103 @@
     color: #fff;
     font-size: 2.4rem;
     margin-top: 6px;
+}
+
+.header-search .header-search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    padding: 0 0 0 16px;
+    border-radius: 2px;
+}
+
+.header-search-select {
+    border-left: 1px solid #e8e8e8;
+    padding-left: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-search-select-text {
+    font-size: 1.4rem;
+    color: #ee4d2d;
+}
+
+.header-search-select-icon {
+    font-size: 1.4rem;
+    color: #ee4d2d;
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+
+.header-search-btn {
+    background-color: #ee4d2d;
+    border: none;
+    height: 34px;
+    width: 60px;
+    border-radius: 2px;
+    margin-right: 3px;
+    outline: none;
+}
+
+.header-search-btn:hover {
+    background-color: #ff7155;
+    cursor: pointer;
+}
+
+.header-search-btnicon {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.header-search-select:hover .header-search-option {
+    display: block;
+}
+
+.header-search-option {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 130px;
+    list-style: none;
+    box-shadow: 0px 2px 3px #ccc;
+    border-radius: 2px;
+    padding-left: 0;
+    /* overflow: hidden; */
+    display: none;
+}
+
+.header-search-option::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.header-search-option-item {
+    background-color: #fff;
+    padding: 8px 8px;
+}
+
+.header-search-option-item:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.header-search-option-item span {
+    font-size: 1.4rem;
+    color: #ee4d2d;
+    padding-left: 8px;
+}
+
+.header-search-option-item i {
+    font-size: 1.2rem;
+    color: #ee4d2d;
+    margin-left: 12px;
 }
