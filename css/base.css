@@ -32,8 +32,8 @@ html {
 .grid-row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -6px;
+    margin-right: -6px;
 }
 
 .grid-content {
@@ -41,14 +41,20 @@ html {
 }
 
 .grid-column-2 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
     width: 16.6667%;
 }
 
+.grid-column-2-4 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 20%;
+}
+
 .grid-column-10 {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
     width: 83.3334%;
 }
 
@@ -205,4 +211,8 @@ html {
 
 .select-input-item-link:hover {
     color: #ee4d2d;
+}
+
+.product-item-action-rated {
+    color: #ffce3e;
 }
