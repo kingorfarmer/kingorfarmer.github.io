@@ -946,14 +946,18 @@
 
 .footer-download-app {
     flex: 1;
-    margin-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.footer-download-app-img {
-    height: 16px;
+.footer-download-app-img-ggplay {
+    height: 67px;
+    margin-left: 20px;
+}
+
+.footer-download-app-img-appstore {
+    height: 47px;
 }
 
 .footer-download-app-link {
