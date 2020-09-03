@@ -27,6 +27,7 @@
 
 .navbar-items-hasNoti:hover .item-noti {
     display: block;
+    z-index: 1;
 }
 
 .navbar-items,
@@ -466,6 +467,7 @@
 
 .header-search-input:focus ~ .header-search-history {
     display: block;
+    z-index: 1;
 }
 
 /* Search history */
@@ -533,6 +535,7 @@
 
 .header-cart-wrap:hover .header-cart-list {
     display: block;
+    z-index: 1;
 }
 
 .header-cart-list {
@@ -711,10 +714,23 @@
 
 /* Product items */
 
+.home-product {
+    margin-bottom: 12px;
+}
+
 .home-product-item {
+    display: block;
     background-color: #fff;
     margin-top: 12px;
     position: relative;
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1;
+    text-decoration: none;
+}
+
+.home-product-item:hover {
+    box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
 }
 
 .home-product-item-img {
@@ -869,4 +885,90 @@
 
 .product-item-sale-text {
     color: #fff;
+}
+
+.home-product-pagination {
+    margin: 48px 0 32px 0; 
+}
+
+/* Footer */
+
+.footer {
+    border-top: 4px solid #ee4d2d;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 12px;
+    border-top: 4px solid #ee4d2d;
+}
+
+.footer-heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    display: block;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item-link:hover {
+    color: #ee4d2d;
+}
+
+.footer-item-icon {
+    font-size: 1.7rem;
+    margin: -1px 8px 0 0;
+}
+
+.footer-download {
+    display: flex;
+}
+
+.footer-download-qr {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dbdbdb;
+}
+
+.footer-download-app {
+    flex: 1;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-download-app-img {
+    height: 16px;
+}
+
+.footer-download-app-link {
+    text-decoration: none;
+}
+
+.footer-copyright {
+    padding: 8px 0;
+    background-color: #f5f5f5;
+    margin-top: 36px;
+}
+
+.footer-copyright-text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #737373;
 }

@@ -176,6 +176,7 @@ html {
 
 .select-input:hover .select-input-list {
     display: block;
+    z-index: 1;
 }
 
 .select-input-label {
@@ -215,4 +216,43 @@ html {
 
 .product-item-action-rated {
     color: #ffce3e;
+}
+
+/* Pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-items {
+    margin: 0 12px;
+}
+
+.pagination-items-current .pagination-items-link {
+    background-color: #ee4d2d;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.pagination-items-current .pagination-items-link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-items-link {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.pagination-items-icon {
+
 }
